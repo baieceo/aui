@@ -50,6 +50,7 @@ background|背景颜色|String|#F8F8F8
 <aui-button type="primary" shape="circle" size="large" long bindtap="handleAddAddress">按钮</aui-button>
 ```
 Button properties
+
 属性|说明|类型|默认值
 -|-|-|-
 i-class|自定义 class 类名|String|-
@@ -69,7 +70,9 @@ send-message-title|会话内消息卡片标题|String|当前标题
 send-message-path|会话内消息卡片点击跳转小程序路径|String|当前分享路径
 send-message-img|会话内消息卡片图片|String|截图
 send-message-card|显示会话内消息卡片|Boolean|false
+
 Button events
+
 事件名|说明|返回值
 -|-|-
 bind:click|按钮在可用状态被点击时触发|-
@@ -97,6 +100,7 @@ bind:error	当使用开放能力时，发生错误的回调|-
 />
 ```
 Calendar properties
+
 属性|说明|类型|默认值
 -|-|-|-
 value|当前选择日期, 传递 Date 对象会接收到空值，需转成时间戳传递过来|Date|-
@@ -107,7 +111,9 @@ options|日期设置，[{ value: '2019/08/08', text: '提示文案' }]|Array|-
 defaultValue|当前日期，默认系统当日|Date|new Date()
 firstDayOfWeek|周起始日 1 到 7|Number|7
 weeks|自定义星期几文字|Array|['一', '二', '三', '四', '五', '六', '日']
+
 Calendar events
+
 事件名|说明|返回值
 -|-|-
 bind:change|日期选择回调|String
@@ -134,6 +140,7 @@ bind:month|月份选择回调|String
 </aui-row>
 ```
 Row properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -164,6 +171,7 @@ justify|flex 布局下的水平排列方式 start/end/center/space-around/space-
 </aui-row>
 ```
 Col properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -187,6 +195,7 @@ pull|栅格向左移动格数|Number|-
 <aui-comment avatar="imageUrl" author="作者" score="{{ 5 }}" likes="{{ 100 }}" content="评论内容" praised="{{ false }}" imageList="{{ [图片数组] }}" />
 ```
 Comment properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -219,6 +228,7 @@ imageList|图片列表|Array|-
 />
 ```
 CountDown properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -228,6 +238,7 @@ format|倒计时文字格式|String|HH:mm:ss
 target|倒计时目标时间戳|Number|-
 
 CountDown events
+
 事件名|说明|返回值
 -|-|-
 bind:callback|倒计时结束回调|-
@@ -246,7 +257,9 @@ bind:callback|倒计时结束回调|-
 ```
 <aui-divider />
 ```
+
 Divider properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -280,6 +293,7 @@ size|分割线大小 rpx|Number|10
 </aui-drawer>
 ```
 Drawer properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -295,6 +309,7 @@ maxWidth|最大宽度|String|100vw
 maxHeight|最大高度|String|100vh
 
 Drawer events
+
 事件名|说明|返回值
 -|-|-
 bind:close|关闭回调|-
@@ -319,6 +334,7 @@ bind:cancel|取消回调|-
 </aui-result>
 ```
 Result properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -329,6 +345,7 @@ iconSize|图标大小|String|150rpx
 iconColor|图标颜色|String|-
 
 Result slot
+
 名称|说明
 -|-
 -|默认插槽
@@ -348,6 +365,7 @@ extra|额外信息
 <aui-rate value="{{ 10 }}" bind:change="handleChange" />
 ```
 Rate properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -368,6 +386,7 @@ textSize|文字大小|String|32rpx
 starWidth|星星宽度|String|auto
 
 Rate events
+
 事件名|说明|返回值
 -|-|-
 bind:change|数值改变回调|-
@@ -387,6 +406,7 @@ bind:change|数值改变回调|-
 <aui-spin />
 ```
 Spin properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -408,6 +428,7 @@ fix|是否固定，需要父级有 relative 或 absolute|Boolean|true
 </aui-white-space>
 ```
 WhiteSpace properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -429,6 +450,7 @@ size|上下间距 rpx|Number|20
 </aui-wing-blank>
 ```
 WhiteSpace properties
+
 属性|说明|类型|默认值
 -|-|-|-
 aui-class|自定义 class 类名|String|-
@@ -452,6 +474,7 @@ size|两侧间距 rpx|Number|20
 </aui-panel>
 ```
 Panel slot
+
 名称|说明
 -|-
 -|默认插槽
