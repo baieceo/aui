@@ -36,17 +36,17 @@
 
 ### Avatar头像组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-avatar": "../../dist/avatar/index",
 }
 ```
-示例
+示例  
 ```
 <aui-avatar aui-class="aui-comment__avatar" src="{{ avatar }}" size="82" border-width="0" />
 ```
-Avatar properties
+Avatar properties  
 
 属性|说明|类型|默认值
 -|-|-|-
@@ -58,18 +58,18 @@ background|背景颜色|String|#F8F8F8
 
 ### Button按钮组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-button": "../../dist/button/index",
 }
 ```
 
-示例
+示例  
 ```
 <aui-button type="primary" shape="circle" size="large" long bindtap="handleAddAddress">按钮</aui-button>
 ```
-Button properties
+Button properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -90,7 +90,9 @@ Button properties
 |send-message-path|会话内消息卡片点击跳转小程序路径|String|当前分享路径|
 |send-message-img|会话内消息卡片图片|String|截图|
 |send-message-card|显示会话内消息卡片|Boolean|false|
-Button events
+
+Button events  
+
 |事件名|说明|返回值|
 |-|-|-|
 |bind:click|按钮在可用状态被点击时触发|-|
@@ -101,14 +103,14 @@ bind:error	当使用开放能力时，发生错误的回调|-|
 
 ### Calendar日历组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-calendar": "../../dist/calendar/index",
 }
 ```
 
-示例
+示例  
 ```
 <aui-calendar 
     value="{{ dateId }}"
@@ -118,7 +120,7 @@ bind:error	当使用开放能力时，发生错误的回调|-|
     bind:month-change="handleMonthChange"
 />
 ```
-Calendar properties
+Calendar properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -131,7 +133,7 @@ Calendar properties
 |firstDayOfWeek|周起始日 1 到 7|Number|7|
 |weeks|自定义星期几文字|Array|['一', '二', '三', '四', '五', '六', '日']|
 
-Calendar events
+Calendar events  
 
 |事件名|说明|返回值|
 |-|-|-|
@@ -142,13 +144,13 @@ Calendar events
 
 ### Row行组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-row": "../../dist/row/index",
 }
 ```
-示例
+示例  
 ```
 <aui-row type="flex" align="middle" gutter="30">
     <aui-col>
@@ -160,7 +162,7 @@ Calendar events
 </aui-row>
 ```
 
-Row properties
+Row properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -175,13 +177,13 @@ Row properties
 
 ### Col列组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-col": "../../dist/col/index",
 }
 ```
-示例
+示例  
 ```
 <aui-row type="flex" align="middle" gutter="30">
     <aui-col>
@@ -192,7 +194,7 @@ Row properties
     </aui-col>
 </aui-row>
 ```
-Col properties
+Col properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -207,17 +209,17 @@ Col properties
 
 ### Comment评论组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-comment": "../../dist/comment/index",
 }
 ```
-示例
+示例  
 ```
 <aui-comment avatar="imageUrl" author="作者" score="{{ 5 }}" likes="{{ 100 }}" content="评论内容" praised="{{ false }}" imageList="{{ [图片数组] }}" />
 ```
-Comment properties
+Comment properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -235,13 +237,13 @@ Comment properties
 
 ### CountDown倒计时组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-count-down": "../../dist/countdown/index",
 }
 ```
-示例
+示例  
 ```
 <aui-count-down
     format="{{ format }}"
@@ -251,7 +253,7 @@ Comment properties
     bind:callback="handleCountdownEnd"
 />
 ```
-CountDown properties
+CountDown properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -261,7 +263,7 @@ CountDown properties
 |format|倒计时文字格式|String|HH:mm:ss|
 |target|倒计时目标时间戳|Number|-|
 
-CountDown events
+CountDown events  
 
 |事件名|说明|返回值|
 |-|-|-|
@@ -272,17 +274,17 @@ CountDown events
 
 ### Divider分割线组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-divider": "../../dist/divider/index",
 }
 ```
-示例
+示例  
 ```
 <aui-divider />
 ```
-Divider properties
+Divider properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -297,13 +299,13 @@ Divider properties
 
 ### Drawer抽屉组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-drawer": "../../dist/drawer/index",
 }
 ```
-示例
+示例  
 ```
 <aui-drawer
     aui-class="modal-share"
@@ -317,7 +319,7 @@ Divider properties
   </view>
 </aui-drawer>
 ```
-Drawer properties
+Drawer properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -333,7 +335,7 @@ Drawer properties
 |maxWidth|最大宽度|String|100vw|
 |maxHeight|最大高度|String|100vh|
 
-Drawer events
+Drawer events  
 
 |事件名|说明|返回值|
 |-|-|-|
@@ -345,13 +347,13 @@ Drawer events
 
 ### Result结果组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-result": "../../dist/result/index",
 }
 ```
-示例
+示例  
 ```
 <aui-result title="暂时没有相关订单" sub-title="更多精彩内容等您发现">
     <view slot="extra">
@@ -359,7 +361,7 @@ Drawer events
     </view>
 </aui-result>
 ```
-Result properties
+Result properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -370,7 +372,7 @@ Result properties
 |iconSize|图标大小|String|150rpx|
 |iconColor|图标颜色|String|-|
 
-Result slot
+Result slot  
 
 |名称|说明|
 |-|-|
@@ -381,17 +383,17 @@ Result slot
 
 ### Rate评分组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-rate": "../../dist/rate/index",
 }
 ```
-示例
+示例  
 ```
 <aui-rate value="{{ 10 }}" bind:change="handleChange" />
 ```
-Rate properties
+Rate properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -412,7 +414,7 @@ Rate properties
 |textSize|文字大小|String|32rpx|
 |starWidth|星星宽度|String|auto|
 
-Rate events
+Rate events  
 
 |事件名|说明|返回值|
 |-|-|-|
@@ -423,17 +425,17 @@ Rate events
 
 ### Spin加载中组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-spin": "../../dist/spin/index",
 }
 ```
-示例
+示例  
 ```
 <aui-spin />
 ```
-Spin properties
+Spin properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -444,19 +446,19 @@ Spin properties
 
 ### WhiteSpace上下补白组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-white-space": "../../dist/white-space/index",
 }
 ```
-示例
+示例  
 ```
 <aui-white-space>
   <text>上下补白</text>
 </aui-white-space>
 ```
-WhiteSpace properties
+WhiteSpace properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -467,19 +469,19 @@ WhiteSpace properties
 
 ### WingBlank两侧补白组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-wing-blank": "../../dist/wing-blank/index",
 }
 ```
-示例
+示例  
 ```
 <aui-wing-blank>
   <text>两侧补白</text>
 </aui-wing-blank>
 ```
-WhiteSpace properties
+WhiteSpace properties  
 
 |属性|说明|类型|默认值|
 |-|-|-|-|
@@ -491,20 +493,20 @@ WhiteSpace properties
 
 ### Panel面板组件
 [返回目录](#目录)  
-在 .json 中引入组件
+在 .json 中引入组件  
 ```
 "usingComponents": {
     "aui-panel": "../../dist/panel/index",
 }
 ```
-示例
+示例  
 ```
 <aui-panel title="标题">
   <view slot="content"><text>内容</text></view>
   <view slot="footer"><text>脚注</text></view>
 </aui-panel>
 ```
-Panel slot
+Panel slot  
 
 |名称|说明|
 |-|-|
