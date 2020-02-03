@@ -99,7 +99,7 @@ Button events
 |bind:getuserinfo|用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同wx.getUserInfo|-|
 |bind:contact|客服消息回调|-|
 |bind:getphonenumber|获取用户手机号回调|-|
-bind:error	当使用开放能力时，发生错误的回调|-|
+|bind:error|当使用开放能力时，发生错误的回调|-|
 
 ### Calendar日历组件
 [返回目录](#目录)  
