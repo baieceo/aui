@@ -28,8 +28,9 @@
 <aui-avatar aui-class="aui-comment__avatar" src="{{ avatar }}" size="82" border-width="0" />
 ```
 Avatar properties
+
 |属性|说明|类型|默认值
-|-|-|-|-
+- | - | - | -
 |aui-class|自定义 class 类名|String|-
 |size|头像大小 rpx|Number|160
 |borderColor|边框颜色|String|#FF7740
