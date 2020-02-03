@@ -18,21 +18,21 @@
 # 组件列表
 
 ## 目录
-[Avatar头像组件](#Avatar头像组件)
-[Button按钮组件](#Button按钮组件)
-[Calendar日历组件](#Calendar日历组件)
-[Row行组件](#Row行组件)
-[Col列组件](#Col列组件)
-[Comment评论组件](#Comment评论组件)
-[CountDown倒计时组件](#CountDown倒计时组件)
-[Divider分割线组件](#Divider分割线组件)
-[Drawer抽屉组件](#Drawer抽屉组件)
-[Result结果组件](#Result结果组件)
-[Rate评分组件](#Rate评分组件)
-[Spin加载中组件](#Spin加载中组件)
-[WhiteSpace上下补白组件](#WhiteSpace上下补白组件)
-[WingBlank两侧补白组件](#WingBlank两侧补白组件)
-[Panel面板组件](#Panel面板组件)
+* [Avatar头像组件](#Avatar头像组件)
+* [Button按钮组件](#Button按钮组件)
+* [Calendar日历组件](#Calendar日历组件)
+* [Row行组件](#Row行组件)
+* [Col列组件](#Col列组件)
+* [Comment评论组件](#Comment评论组件)
+* [CountDown倒计时组件](#CountDown倒计时组件)
+* [Divider分割线组件](#Divider分割线组件)
+* [Drawer抽屉组件](#Drawer抽屉组件)
+* [Result结果组件](#Result结果组件)
+* [Rate评分组件](#Rate评分组件)
+* [Spin加载中组件](#Spin加载中组件)
+* [WhiteSpace上下补白组件](#WhiteSpace上下补白组件)
+* [WingBlank两侧补白组件](#WingBlank两侧补白组件)
+* [Panel面板组件](#Panel面板组件)
 
 ### Avatar头像组件
 在 .json 中引入组件
