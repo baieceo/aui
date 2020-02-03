@@ -35,7 +35,7 @@
 * [Panel面板组件](#Panel面板组件)
 
 ### Avatar头像组件
-[目录](#目录)
+[目录](#目录)  
 在 .json 中引入组件
 ```
 "usingComponents": {
