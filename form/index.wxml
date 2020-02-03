@@ -1,0 +1,6 @@
+<!--aui/packages/form/index.wxml-->
+<view class="aui-form aui-class a-class">
+  <view class="aui-form__body" bind:input="input">
+    <slot></slot>
+  </view>
+</view>

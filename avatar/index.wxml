@@ -1,0 +1,8 @@
+<!--aui/packages/avatar/index.wxml-->
+<view class="aui-avatar aui-class a-class">
+  <image 
+    mode="aspectFill" 
+    src="{{ src }}" 
+    style="width: {{ size + 'rpx' }}; height: {{ size + 'rpx' }}; border: {{ borderWidth + 'rpx' }} solid {{ borderColor }}; background: {{ background }}; border-radius: 50%; box-sizing: border-box;"
+  />
+</view>

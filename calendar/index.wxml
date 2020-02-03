@@ -1,0 +1,66 @@
+<!--aui/packages/calendar/index.wxml-->
+<view class="aui-calendar aui-class a-class">
+  <view class="aui-calendar__inner">
+    <view class="aui-calendar__header">
+      <view class="aui-calendar__button {{ canDisabledPrev || disabledPrev ? 'aui-calendar__button-prev_disabled' : '' }}" bindtap="handleTapPrev">
+        <aui-icon type="return" />
+      </view>
+      <text class="aui-calendar__title">{{ currentYear + '年' + currentMonth + '月' }}</text>
+      <view class="aui-calendar__button {{ disabledNext ? 'aui-calendar__button-next_disabled' : '' }}" bindtap="handleTapNext">
+        <aui-icon type="enter" />
+      </view>
+    </view>
+    <view class="aui-calendar__body">
+      <view class="aui-calendar-table">
+        <view class="aui-calendar-table__header">
+          <view class="aui-calendar-table__row">
+            <view class="aui-calendar-table__col" 
+              wx:for="{{ weeks }}"
+              wx:key="key"
+            >
+              <view class="aui-calendar-table__cell {{ (index + firstDayOfWeek - 1) % 7 === 6 || (index + firstDayOfWeek - 1) % 7 === 5 ? 'aui-calendar-table__festival' : '' }}">
+                <text class="aui-calendar-table__text">{{ weeks[(index + firstDayOfWeek - 1) % 7] }}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="aui-calendar-table__body">
+          <view class="aui-calendar-table__row"
+            wx:for="{{ dateData }}"
+            wx:for-index="weekIndex"
+            wx:key="week"
+          >
+            <view class="aui-calendar-table__col"
+              wx:for="{{ dateData[weekIndex] }}"
+              wx:for-index="dayIndex"
+              wx:for-item="dayItem"
+              wx:key="day"
+            >
+              <view 
+                class="aui-calendar-table__cell {{ dayItem.isCurrentDate ? 'aui-calendar-table__current-date' : '' }} {{ dayItem.isDefaultDate ? 'aui-calendar-table__default-date' : '' }} {{ dayItem.isPrevMonth ? 'aui-calendar-table__prev-month' : '' }} {{ dayItem.isNextMonth ? 'aui-calendar-table__next-month' : '' }} {{ dayItem.isDefaultPrev ? 'aui-calendar-table__default-prev' : '' }} {{ dayItem.disabled ? 'aui-calendar-table__disabled' : '' }} {{ dayItem.isFestival ? 'aui-calendar-table__festival' : '' }}"
+                data-date-string="{{ dayItem.dateString }}"
+                data-disabled="{{ dayItem.disabled }}"
+                bindtap="handleTapDate"
+              >
+                <text 
+                  class="aui-calendar-table__text" 
+                  data-date-string="{{ dayItem.dateString }}"
+                  data-disabled="{{ dayItem.disabled }}"
+                >{{ dayItem.day }}</text>
+                <text 
+                  wx:if="{{ dayItem.text }}"
+                  class="aui-calendar-table__extra"
+                  data-date-string="{{ dayItem.dateString }}"
+                  data-disabled="{{ dayItem.disabled }}"
+                >{{ dayItem.text }}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="aui-calendar__footer">
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "aui-rate": "../rate/index",
+    "aui-icon": "../icon/index",
+    "aui-avatar": "../avatar/index"
+  }
+}

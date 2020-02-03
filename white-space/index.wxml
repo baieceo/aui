@@ -1,0 +1,2 @@
+<!--aui/packages/white-space/index.wxml-->
+<view class="aui-whitespace aui-class a-class" style="height: {{ size }}rpx;"><slot></slot></view>

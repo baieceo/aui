@@ -1,0 +1,29 @@
+<!--aui/packages/popup/index.wxml-->
+<view
+  wx:if="{{ mask }}"
+  class="aui-popup__mask aui-class-mask {{ visible ? 'aui-popup__mask_show' : '' }}" 
+  bindtap="handleMaskClick" 
+  style="transition: all {{ duration + 's' }} ease-in-out;" ></view>
+
+<view wx:if="{{ visible }}" class="aui-popup {{ visible ? 'aui-popup_animate-in' : 'aui-popup_animate-out' }} aui-class a-class">
+  <view class="aui-popup__wrapper {{ 'aui-popup__wrapper_' + position }}" style="animation-duration: {{ duration + 's' }}">
+    <view class="aui-popup__header">
+      <block wx:if="{{ title }}">
+        <view class="aui-popup__header-title">{{ title }}</view>
+      </block>
+      <block wx:else>
+        <slot name="header"></slot>
+      </block>
+      <view class="aui-popup__header-close" wx:if="{{ closable }}" bind:tap="handleClose"></view>
+    </view>
+    <view class="aui-popup__body">
+      <slot></slot>
+      <view class="aui-popup__content">
+        <slot name="content">内容</slot>
+      </view>
+    </view>
+    <view class="aui-popup__footer">
+      <slot name="footer"></slot>
+    </view>
+  </view>
+</view>

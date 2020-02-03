@@ -1,0 +1,44 @@
+/* aui/packages/navbar/index.wxss */
+.aui-navbar {
+  background-color: #FFF;
+}
+
+.aui-navbar__header {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.aui-navbar__back {
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+}
+
+.aui-navbar__home {
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+}
+
+.aui-navbar__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+}
+
+.aui-navbar__content {
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-size: 32rpx;
+  line-height: 44rpx;
+}
+
+.aui-navbar__content_large {
+  font-size: 40rpx;
+  line-height: 56rpx;
+}

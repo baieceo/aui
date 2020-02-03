@@ -1,0 +1,35 @@
+<!--aui/packages/table/index.wxml-->
+<view class="aui-table {{ border ? 'aui-table_border' : '' }} aui-class a-class">
+  <view class="aui-table__thead">
+    <view class="aui-table__tr">
+      <view 
+        class="aui-table__th" 
+        style="width: {{ item.width }}; text-align: {{ item.align }}"
+        wx:for="{{ columnsData }}"
+        wx:key="{{ index }}"
+      >
+        <view class="aui-table__cell {{ item.ellipsis ? 'aui-table__cell_ellipsis' : '' }}">{{ item.title }}</view>
+        </view>
+    </view>
+  </view>
+  <view class="aui-table__tbody">
+    <view 
+      class="aui-table__tr"
+      wx:for="{{ data }}"
+      wx:for-item="dataItem"
+      wx:for-index="dataIndex"
+      wx:key="{{ dataIndex }}"
+    >
+      <view 
+        class="aui-table__td" 
+        style="width: {{ columnItem.width }}; text-align: {{ columnItem.align }}"
+        wx:for="{{ columnsData }}"
+        wx:for-item="columnItem"
+        wx:for-index="columnIndex"
+        wx:key="{{ columnIndex }}"
+      >
+        <view class="aui-table__cell {{ columnItem.ellipsis ? 'aui-table__cell_ellipsis' : '' }}">{{ dataItem[columnItem.key] }}</view>
+        </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+/* aui/packages/divider/index.wxss */
+.aui-divider {
+  font-size: 28rpx;
+  line-height: 1.5;
+  color: #333;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #EEE;
+}
+
+.aui-divider-horizontal {
+  display: block;
+  height: 1rpx;
+  width: 100%;
+  min-width: 100%;
+  margin: 10rpx 0;
+  clear: both;
+}
+
+.aui-divider-vertical {
+  margin: 0 10rpx;
+  display: inline-block;
+  height: .9em;
+  width: 1rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -.06em;
+}
+
+.aui-divider-horizontal.aui-divider-dashed {
+  background: none;
+  border-top: 1px dashed #EEE;
+}
+
+.aui-divider-vertical.aui-divider-dashed {
+  border-top: none;
+  border-left: 1px dashed #EEE;
+}

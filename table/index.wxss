@@ -1,0 +1,66 @@
+/* aui/packages/table/index.wxss */
+.aui-table {
+  width: 100%;
+  border:1px solid #D1D3D5;
+  overflow: hidden;
+}
+.aui-table__tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.aui-table__th, .aui-table__td {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+}
+.aui-table__cell {
+  word-wrap: break-word;
+}
+.aui-table__cell_ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.aui-table__th {
+  position: relative;
+  background-color: #EFEFEF;
+  font-weight: 400;
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+  color: #828282;
+  line-height: 40rpx;
+  margin-right: 1px;
+}
+.aui-table__th:last-of-type {
+  margin-right: 0;
+}
+.aui-table__td {
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #828282;
+  padding: 20rpx 20rpx;
+  margin-right: 1px;
+}
+.aui-table__td:last-of-type {
+  margin-right: 0;
+}
+.aui-table__tbody .aui-table__tr {
+  border-bottom: 1px solid #D1D3D5;
+}
+.aui-table__tbody .aui-table__tr:last-of-type {
+  border-bottom: none;
+}
+
+.aui-table_border .aui-table__th, .aui-table_border .aui-table__td {
+  margin-right: 0;
+  border-right: 1px solid #D1D3D5;
+}
+.aui-table_border .aui-table__th:last-of-type, .aui-table_border .aui-table__td:last-of-type {
+  border-right: none;
+}

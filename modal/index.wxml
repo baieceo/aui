@@ -1,0 +1,13 @@
+<!--aui/packages/modal/index.wxml-->
+<view class="aui-modal__mask aui-class-mask {{ visible ? 'aui-modal__mask_show' : '' }}" bindtap="handleMaskClick"></view>
+<view class="a-class aui-class aui-modal {{ visible ? 'aui-modal_show' : '' }}">
+  <view class="aui-modal__main">
+    <view 
+      class="aui-modal__content"
+      style="width: {{ width }}; height: {{ height }}; max-height: {{ maxHeight }}">
+      <aui-icon aui-class="aui-modal__close" type="close" size="30" bindtap="handleClickCancel" wx:if="{{ closable }}" />
+      <view class="aui-modal__title" wx:if="{{ title }}">{{ title }}</view>
+      <view class="aui-modal__body aui-class-body"><slot></slot></view>
+    </view>
+  </view>
+</view>

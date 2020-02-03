@@ -1,0 +1,78 @@
+/* aui/packages/cell/index.wxss */
+.aui-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.aui-cell::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e9eaec;
+  border-bottom-width: 1px;
+  left: 15px;
+  right: 0;
+}
+
+.aui-cell-last::after {
+  display: none;
+}
+
+.aui-cell-icon {
+  margin-right: 5px;
+}
+
+.aui-cell-icon:empty {
+  display: none;
+}
+
+.aui-cell-bd {
+  flex: 1;
+}
+
+.aui-cell-text {
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.aui-cell-desc {
+  line-height: 1.2;
+  font-size: 12px;
+  color: #80848f;
+}
+
+.aui-cell-ft {
+  position: relative;
+  text-align: right;
+  color: #495060;
+}
+
+.aui-cell-access-ft {
+  padding-right: 13px;
+}
+
+.aui-cell-access-ft::after {
+  content: " ";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  border-width: 2px 2px 0 0;
+  border-color: #dddee1;
+  border-style: solid;
+  transform: translatey(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}

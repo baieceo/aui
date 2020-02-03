@@ -1,0 +1,6 @@
+/* aui/packages/col/index.wxss */
+.aui-col {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+}

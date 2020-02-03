@@ -1,0 +1,124 @@
+.aui-drawer {
+  visibility: hidden;
+}
+
+.aui-drawer_show {
+  visibility: visible;
+}
+
+.aui-drawer_show .aui-drawer__mask {
+  display: block;
+  opacity: 1;
+}
+
+.aui-drawer_show .aui-drawer__container {
+  opacity: 1;
+}
+
+.aui-drawer_show.aui-drawer_top .aui-drawer__container,
+.aui-drawer_show.aui-drawer_bottom .aui-drawer__container {
+  transform: translate3d(-50%, 0, 0);
+}
+
+.aui-drawer_show.aui-drawer_left .aui-drawer__container,
+.aui-drawer_show.aui-drawer_right .aui-drawer__container {
+  transform: translate3d(0, -50%, 0);
+}
+
+.aui-drawer__mask {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.aui-drawer__container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 101;
+  opacity: 0;
+  background: #FFF;
+}
+
+.aui-drawer_top .aui-drawer__container, .aui-drawer_bottom .aui-drawer__container {
+  width: 100%;
+}
+
+.aui-drawer_left .aui-drawer__container, .aui-drawer_right .aui-drawer__container {
+  height: 100%;
+}
+
+.aui-drawer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.aui-drawer_left .aui-drawer__content, .aui-drawer_right .aui-drawer__content {
+  max-width: 100vh;
+}
+
+.aui-drawer_top .aui-drawer__content, .aui-drawer_bottom .aui-drawer__content {
+  max-height: 100vh;
+}
+
+.aui-drawer__body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.aui-drawer_top .aui-drawer__container {
+  bottom: auto;
+  top: 0;
+  transform: translate3d(-50%, -100%, 0);
+  border-radius: 0 0 12rpx 12rpx;
+}
+
+.aui-drawer_bottom .aui-drawer__container {
+  bottom: 0;
+  top: auto;
+  transform: translate3d(-50%, 100%, 0);
+  border-radius: 12rpx 12rpx 0 0;
+}
+
+.aui-drawer_left .aui-drawer__container {
+  left: 0;
+  top: 50%;
+  transform: translate3d(-100%, -50%, 0);
+  border-radius: 0 12rpx 12rpx 0;
+}
+
+.aui-drawer_right .aui-drawer__container {
+  right: 0;
+  top: 50%;
+  left: auto;
+  transform: translate3d(100%, -50%, 0);
+  border-radius: 12rpx 0 0 12rpx;
+}
+
+.aui-drawer__close {
+  position: absolute;
+  top: 32rpx;
+  right: 24rpx;
+  z-index: 102;
+  color: #666;
+}
+
+.aui-drawer__title {
+  min-height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding: 20rpx;
+}

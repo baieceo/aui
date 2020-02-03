@@ -1,0 +1,4 @@
+<!--aui/packages/cell-group/index.wxml-->
+<view class="aui-class aui-cell-group">
+    <slot></slot>
+</view>

@@ -1,0 +1,4 @@
+<!--aui/packages/tab-pane/index.wxml-->
+<view class="aui-tabs__tab-pane {{ current ? 'aui-tabs__tab-pane_active' : '' }} aui-class a-class" wx:if="{{ current }}">
+  <slot></slot>
+</view>

@@ -1,0 +1,59 @@
+/* aui/packages/comment/index.wxss */
+.aui-comment {
+  padding: 24rpx 0 16rpx;
+}
+
+.aui-comment__header {
+  display: flex;
+}
+
+.aui-comment__avatar {
+  margin-right: 22rpx;
+}
+
+.aui-comment__content {
+  flex: 1;
+}
+
+.aui-comment__content-author-name {
+  color: #333;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  padding-bottom: 8rpx;
+}
+
+.aui-comment__content-likes {
+  color: #666;
+  padding-left: 20rpx;
+  line-height: 34rpx;
+}
+
+.aui-comment__content-likes-text {
+  font-size: 24rpx;
+}
+
+.aui-comment__header {
+  padding-bottom: 18rpx;
+}
+
+.aui-comment__detail {
+  color: #666;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  padding-bottom: 14rpx;
+}
+
+.aui-comment__content-likes_praised {
+  color: #FF6A4C;
+}
+
+.aui-comment__image-list {
+  margin-right: -20rpx;
+}
+
+.aui-comment_image-item {
+  background: #D8D8D8;
+  width: 120rpx;
+  height: 120rpx;
+  margin: 14rpx 20rpx 6rpx 0;
+}

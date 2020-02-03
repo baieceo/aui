@@ -1,0 +1,23 @@
+<!--aui/packages/drawer/index.wxml-->
+<view class="a-class aui-class aui-drawer {{ visible ? 'aui-drawer_show' : '' }} {{ 'aui-drawer_' + mode }}">
+    <view 
+      wx:if="{{ mask }}" 
+      class="aui-drawer__mask" 
+      style="transition-duration: {{ duration + 's' }}" 
+      bindtap="handleMaskClick"></view>
+    <view 
+      class="aui-drawer__container"
+      style="transition-duration: {{ duration + 's' }}"
+    >
+      <view class="aui-drawer__main">
+        <view 
+          class="aui-drawer__content"
+          style="max-width: {{ maxWidth }}; max-height: {{ maxHeight }}"
+        >
+          <aui-icon aui-class="aui-drawer__close" type="close" size="28" bindtap="handleMaskClick" wx:if="{{ closable }}" />
+          <view class="aui-drawer__title" wx:if="{{ title || showTitle }}">{{ title }}</view>
+          <view class="aui-drawer__body"><slot></slot></view>
+        </view>
+      </view>
+    </view>
+</view>

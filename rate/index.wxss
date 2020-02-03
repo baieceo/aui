@@ -1,0 +1,70 @@
+/* aui/packages/rate/index.wxss */
+.aui-rate, .aui-rate__body {
+  overflow: hidden;
+}
+
+.aui-rate__content {
+  display: flex;
+  align-items: center;
+}
+
+.aui-rate__stars {
+  display: flex;
+}
+
+.aui-rate__star-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aui-rate__star {
+  position: relative;
+}
+
+.aui-rate__star-normal {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.aui-rate__star-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.aui-rate__star icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aui-rate__star-text {
+  font-size: 24rpx;
+  color: #CCC;
+}
+
+.aui-rate__text {
+  line-height: 1.4em;
+  margin-left: .3125em;
+}
+
+.aui-rate__content_orientation-left {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.aui-rate__content_orientation-left .aui-rate__text {
+  margin-left: 0;
+  margin-right: .3125em;
+}
+
+.aui-rate__content_orientation-left .aui-rate__text {
+  margin-left: 0;
+  margin-right: .3125em;
+}

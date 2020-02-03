@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "aui-icon": "../icon/index"
+  }
+}

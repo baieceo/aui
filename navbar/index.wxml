@@ -1,0 +1,18 @@
+<!--aui/packages/navbar/index.wxml-->
+<view class="aui-navbar aui-class a-class">
+  <view style="padding-top: {{ statusBarHeight + 'px' }}"></view>
+  <view class="aui-navbar__container">
+    <view class="aui-navbar__header">
+      <view wx:if="{{ !hideBack }}" class="aui-navbar__back" bindtap="handleGotoBack">
+        <aui-icon type="return" size="40rpx" color="#333" />
+      </view>
+      <view wx:if="{{ !hideHome }}" class="aui-navbar__home" bindtap="handleGotoHome">
+        <aui-icon type="homepage" size="48rpx" color="#333" />
+      </view>
+    </view>
+    <view class="aui-navbar__content aui-navbar__content_{{ titleSize }}">  
+      {{ title }}
+      <slot></slot>
+    </view>
+  </view>
+</view>

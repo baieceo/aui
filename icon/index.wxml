@@ -1,0 +1,5 @@
+<!--aui/packages/icon/index.wxml-->
+<view 
+  class="aui-icon {{ type === '' ? '' : 'aui-icon__' +  type }} {{ custom }} aui-class a-class" 
+  style="font-size: {{ size }}; {{ color ? 'color:' + color : '' }}"></view>
+

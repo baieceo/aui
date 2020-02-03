@@ -1,0 +1,4 @@
+/* aui/packages/white-space/index.wxss */
+.aui-whitespace {
+  width: 100%;
+}

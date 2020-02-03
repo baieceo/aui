@@ -1,0 +1,7 @@
+<!--aui/packages/picker/index.wxml-->
+<view class="aui-picker aui-class a-class">
+  <view class="aui-picker__body {{ disabled ? 'aui-picker__body_disabled' : '' }}" bind:tap="handleItemClick">
+    <view class="aui-picker__label" wx:if="{{ value }}">{{ label }}</view>
+    <view class="aui-picker__placeholder" wx:else>{{ placeholder }}</view>
+  </view>
+</view>

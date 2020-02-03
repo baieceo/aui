@@ -1,0 +1,11 @@
+<!--aui/packages/count-down/index.wxml-->
+<view class="a-class aui-class aui-countdown">
+  <block
+    wx:for="{{ time }}"
+    wx:key="key"
+  >
+    <text 
+      class="aui-countdown__text {{ item.type === 'text' ? 'aui-class-text' : '' }} {{ item.type === 'normal' ? 'aui-class-normal' : '' }}"
+    >{{ item.value }}</text>
+  </block>
+</view>

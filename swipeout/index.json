@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "aui-cell": "../cell/index",
+    "aui-icon": "../icon/index"
+  }
+}

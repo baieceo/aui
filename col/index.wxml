@@ -1,0 +1,7 @@
+<!--aui/packages/col/index.wxml-->
+<view 
+  class="aui-col aui-class a-class"
+  style="padding-left: {{ gutter / 2 }}rpx; padding-right: {{ gutter / 2 }}rpx; width: {{ span ? (100 / 24 * span) + '%' : 'auto' }}; left: {{ push ? (100 / 24 * push) + '%' : 'auto' }}; right: {{ pull ? (100 / 24 * pull) + '%' : 'auto' }};"
+>
+  <slot></slot>
+</view>

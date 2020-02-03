@@ -1,0 +1,51 @@
+<!--aui/packages/rate/index.wxml-->
+<view class="aui-rate aui-class a-class">
+  <view class="aui-rate__body">
+    <view class="aui-rate__content aui-rate__content_orientation-{{ orientation }}">
+      <view class="aui-rate__stars">
+        <view 
+          class="aui-rate__star-wrap"
+          style="width: {{ starWidth }}"
+          wx:for="{{ count }}"
+          wx:key="key"
+        >
+          <view 
+            class="aui-rate__star"
+            style="width: {{ size }}; height: {{ size }};"
+            data-index="{{ index }}" 
+            bindtap="handleClickStar"
+          >
+            <view class="aui-rate__star-normal">
+              <icon 
+                wx:if="{{ index >= full }}"
+                type="collection_fill" 
+                color="{{ normalColor }}" 
+                size="{{ size }}" 
+              />
+            </view>
+            <view 
+              class="aui-rate__star-fill" 
+              style="width: {{ index < full ? '100%' : index === full ? percent ? (allowHalf ? 50 : percent) + '%' : 0 : 0 }}"
+            >
+              <icon 
+                type="collection_fill"
+                color="{{ color }}" 
+                size="{{ size }}"
+              />
+            </view>
+          </view>
+          <view wx:if="{{ texts.length && texts[index] }}" class="aui-rate__star-text">
+            {{ texts[index] }}
+          </view>
+        </view>
+      </view>
+      
+      <view 
+        class="aui-rate__text"
+        wx:if="{{ showText }}"
+        style="color: {{ textColor }}; font-size: {{ textSize }}"
+      >{{ textValue }}</view>
+      <slot></slot>
+    </view>
+  </view>
+</view>

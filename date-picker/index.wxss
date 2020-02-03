@@ -1,0 +1,16 @@
+/* aui/packages/date-picker/index.wxss */
+.aui-date-picker {
+  
+}
+
+.aui-picker-date__value, .aui-picker-date__placeholder {
+  font-size: 30rpx;
+}
+
+.aui-picker-date__value {
+  color: #333333;
+}
+
+.aui-picker-date__placeholder {
+  color: #979797;
+}

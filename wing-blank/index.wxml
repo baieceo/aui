@@ -1,0 +1,7 @@
+<!--aui/packages/wing-blank/index.wxml-->
+<view 
+  class="aui-wingblank aui-class a-class" 
+  style="margin-left: {{ size }}rpx; margin-right: {{ size }}rpx;"
+>
+  <slot></slot>
+</view>

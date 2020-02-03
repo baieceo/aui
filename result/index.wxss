@@ -1,0 +1,40 @@
+/* aui/packages/result/index.wxss */
+.aui-result {
+  padding: 96rpx 64rpx;
+  font-size: 28rpx;
+}
+
+.aui-result__icon {
+  margin-bottom: 36rpx;
+  text-align: center;
+}
+
+.aui-reslt__icon-image {
+  width: 68px;
+  height: 68px;
+}
+
+.aui-result__title {
+  color: rgba(0, 0, 0, .85);
+  font-size: 36rpx;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.aui-result__subtitle {
+  color: rgba(0, 0, 0, .45);
+  font-size: 28rpx;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.aui-result__content {
+  margin-top: 24rpx;
+  padding: 24rpx 40rpx;
+  /* background-color: #fafafa; */
+}
+
+.aui-result__extra {
+  margin-top: 32rpx;
+  text-align: center;
+}

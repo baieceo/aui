@@ -1,0 +1,17 @@
+<!--aui/packages/tabs/tabs/index.wxml-->
+<view class="aui-tabs aui-class a-class">
+  <view class="aui-tabs__bar">
+    <view class="aui-tabs__nav">
+      <view
+        class="aui-tabs__tab {{ current === item.key ? 'aui-tabs__tab_active' : '' }}" 
+        wx:for="{{ tabs }}"
+        wx:key="{{ index }}"
+        data-key="{{ item.key }}"
+        bindtap="handleClickItem"
+      >{{item.title}}</view>
+    </view>
+  </view>
+  <view class="aui-tabs__content">
+    <slot></slot>
+  </view>
+</view>

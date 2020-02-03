@@ -1,0 +1,25 @@
+<!--aui/packages/button/index.wxml-->
+<button
+    class="aui-btn {{ 'aui-btn_' + type }} {{ 'aui-btn_' + size }} {{ 'aui-btn_' + shape }} {{ long ? 'aui-btn_long' : '' }} {{ inline ? 'aui-btn_inline' : '' }} {{ disabled ? 'aui-btn_disabled' : '' }} {{ loading ? 'aui-btn_loading' : '' }} {{ ghost ? 'aui-btn_ghost' : '' }} aui-class a-class"
+    hover-class="aui-btn_hover"
+    bindtap="handleTap"
+    open-type="{{ openType }}"
+    app-parameter="{{ appParameter }}"
+    hover-stop-propagation="{{ hoverStopPropagation }}"
+    hover-start-time="{{ hoverStartTime }}"
+    hover-stay-time="{{ hoverStayTime }}"
+    session-from="{{ sessionFrom }}"
+    send-message-title="{{ sendMessageTitle }}"
+    send-message-path="{{ sendMessagePath }}"
+    send-message-img="{{ sendMessageImg }}"
+    show-message-card="{{ showMessageCard }}"
+    bindcontact="bindcontact"
+    bindgetuserinfo="bindgetuserinfo"
+    bindgetphonenumber="bindgetphonenumber"
+    binderror="binderror"
+    plain="true"
+    form-type="formType"
+>
+  <view class="aui-btn__loading-inner" wx:if="{{ loading }}"></view>
+  <slot></slot>
+</button>

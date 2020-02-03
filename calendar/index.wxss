@@ -1,0 +1,84 @@
+/* aui/packages/calendar/index.wxss */
+.aui-calendar {
+  
+}
+
+.aui-calendar__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #FF6A4C;
+  line-height: 40rpx;
+  padding: 28rpx 20rpx;
+}
+
+.aui-calendar__header .aui-calendar__title {
+  padding: 0 32rpx;
+}
+
+.aui-calendar-table__row {
+  display: flex;
+}
+
+.aui-calendar-table__col {
+  flex: 1;
+  text-align: center;
+}
+
+.aui-calendar-table__festival {
+  color: #FF6A4C;
+}
+
+.aui-calendar-table__prev-month, .aui-calendar-table__next-month, .aui-calendar-table__default-prev, .aui-calendar__button-prev_disabled, .aui-calendar__button-next_disabled, .aui-calendar-table__disabled {
+  color: #CCC;
+}
+
+.aui-calendar-table__text {
+  position: relative;
+  z-index: 1;
+}
+
+.aui-calendar-table__extra {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #CCC;
+  font-size: 16rpx;
+  line-height: 1.2;
+}
+
+.aui-calendar-table__header .aui-calendar-table__cell, .aui-calendar-table__body .aui-calendar-table__cell {
+  position: relative;
+  min-height: 80rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.aui-calendar-table__body {
+  font-size: 28rpx;
+}
+
+.aui-calendar-table__body .aui-calendar-table__text {
+  line-height: 60rpx;
+}
+
+.aui-calendar-table__current-date::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  transform: translate3d(-50%, 0, 0);
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background: #FF6A4C;
+}
+
+.aui-calendar-table__current-date .aui-calendar-table__text {
+  color: #FFF;
+}

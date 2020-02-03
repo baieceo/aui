@@ -1,0 +1,24 @@
+<!--aui/packages/result/index.wxml-->
+<view class="aui-result {{ status ? 'aui-result-' + status : '' }} aui-class a-class">
+  <view wx:if="{{ status }}" class="aui-result__icon">
+    <image class="aui-reslt__icon-image" wx:if="{{ status === 'info' }}" mode="{{ iconMode }}" src="/assets/images/icons/info@2x.png" />
+
+    <image class="aui-reslt__icon-image" wx:if="{{ status === 'success' }}" mode="{{ iconMode }}" src="/assets/images/icons/success@2x.png" />
+
+    <image class="aui-reslt__icon-image" wx:if="{{ status === 'warning' }}" mode="{{ iconMode }}" src="/assets/images/icons/warning@2x.png" />
+
+    <image class="aui-reslt__icon-image" wx:if="{{ status === 'error' }}" mode="{{ iconMode }}" src="/assets/images/icons/error@2x.png" />
+  </view>
+  <view class="aui-result__title">
+    {{ title }}
+  </view>
+  <view class="aui-result__subtitle">
+    {{ subTitle }}
+  </view>
+  <view class="aui-result__content">
+    <slot />
+  </view>
+  <view class="aui-result__extra">
+    <slot name="extra" />
+  </view>
+</view>

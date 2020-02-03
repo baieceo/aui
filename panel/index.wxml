@@ -1,0 +1,16 @@
+<!--aui/packages/panel/index.wxml-->
+<view class="aui-panel aui-class a-class" style="width: {{ width }}">
+    <view class="aui-panel__header">
+      <view class="aui-panel__header-content">
+        {{ title }}
+      </view>
+      <view class="aui-panel__header-extra" wx:if="{{ extra }}">{{ extra }}</view>
+    </view>
+    <view class="aui-panel__body">
+      <slot></slot>
+      <slot name="content"></slot>
+    </view>
+    <view class="aui-panel__footer">
+      <slot name="footer"></slot>
+    </view>
+</view>

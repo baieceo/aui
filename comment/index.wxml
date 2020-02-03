@@ -1,0 +1,30 @@
+<!--aui/packages/comment/index.wxml-->
+<view class="aui-comment aui-class a-class">
+  <view class="aui-comment__inner">
+    <view class="aui-comment__header">
+      <aui-avatar aui-class="aui-comment__avatar" src="{{ avatar }}" size="82" border-width="0" />
+      <view class="aui-comment__content">
+        <text class="aui-comment__content-author-name">{{ author }}</text>
+        <aui-rate
+          disabled="{{ true }}"
+          value="{{ score }}"
+          color="#FFC522"
+          size="24rpx"
+        />
+      </view>
+      <view class="aui-comment__content-likes {{ praised ? 'aui-comment__content-likes_praised' : '' }}" bindtap="handleClickLike">
+          <aui-icon type="praise" size="34" />
+          <text class="aui-comment__content-likes-text">（{{ likes }}）</text>
+        </view>
+    </view>
+    <view class="aui-comment__body">
+      <view class="aui-comment__detail">
+        {{ content }}
+      </view>
+
+      <view class="aui-comment__image-list" wx:if="{{ imageList && imageList.length }}">
+        <image lazy-load wx:for="{{ imageList }}" wx:key="key" mode="aspectFit" class="aui-comment_image-item" src="{{ item }}" />
+      </view>
+    </view>
+  </view>
+</view>

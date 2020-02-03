@@ -1,0 +1,7 @@
+<!--aui/packages/divider/index.wxml-->
+<view 
+  class="aui-divider aui-class a-class aui-divider-{{ type }} {{ dashed ? 'aui-divider-dashed' : '' }}" 
+  style="margin: {{ type === 'horizontal' ? size + 'rpx 0' : '0 ' + size + 'rpx' }}"
+>
+  <slot></slot>
+</view>

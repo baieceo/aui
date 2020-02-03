@@ -1,0 +1,7 @@
+<!--aui/packages/row/index.wxml-->
+<view 
+  class="aui-row aui-class a-class {{ type === 'flex' ? 'aui-row__flex' : '' }} .aui-row__justify-{{ justify }}  .aui-row__align-{{ align }}"
+  style="margin-left: {{ gutter ? -(gutter / 2) + 'rpx' : 0 }}; margin-right: {{ gutter ? -(gutter / 2) + 'rpx' : 0 }};"
+>
+  <slot></slot>
+</view>

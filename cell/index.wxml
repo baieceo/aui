@@ -1,0 +1,17 @@
+<!--aui/packages/cell/index.wxml-->
+<view bindtap="handleTap" class="aui-class aui-cell {{ isLastCell ? 'aui-cell-last' : '' }} {{ isLink ? 'aui-cell-access' : '' }}">
+    <view class="aui-cell-icon">
+        <slot name="icon"></slot>
+    </view>
+    <view class="aui-cell-bd">
+        <view wx:if="{{ title }}" class="aui-cell-text">{{ title }}</view>
+        <view wx:if="{{ label }}" class="aui-cell-desc">{{ label }}</view>
+        <slot></slot>
+    </view>
+    <view catchtap="navigateTo" class="aui-cell-ft">
+        <block wx:if="{{value}}">{{ value }}</block>
+        <block wx:else>
+            <slot name="footer"></slot>
+        </block>
+    </view>
+</view>

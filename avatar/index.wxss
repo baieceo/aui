@@ -1,0 +1,4 @@
+/* aui/packages/avatar/index.wxss */
+.aui-avatar {
+  display: inline-block;
+}

@@ -1,0 +1,13 @@
+/* aui/packages/picker/index.wxss */
+.aui-picker__body {
+  font-size: 30rpx;
+}
+.aui-picker__label {
+  color: #333;
+}
+.aui-picker__placeholder {
+  color: #979797;
+}
+.aui-picker__body_disabled .aui-picker__label, .aui-picker__body_disabled .aui-picker__placeholder {
+  color: #999;
+}

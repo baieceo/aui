@@ -1,0 +1,9 @@
+/* aui/packages/input/index.wxss */
+.aui-input {
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.aui-input__text_disabled {
+  color: #999;
+}

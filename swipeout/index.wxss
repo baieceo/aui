@@ -1,0 +1,38 @@
+/* aui/packages/swipeout/index.wxss */
+.aui-swipeout-wrap {
+  border-bottom: #dddee1 solid 1px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.aui-swipeout-item {
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  transition: transform .2s ease;
+  font-size: 14px;
+}
+
+.aui-swipeout-content {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.aui-swipeout-button-right-group {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+}
+
+.aui-swipeout-button-right-item {
+  height: 100%;
+  float: left;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

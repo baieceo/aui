@@ -1,0 +1,9 @@
+<!--aui/packages/spin/index.wxml-->
+<view class="aui-spin {{ fix ? 'aui-spin_fix' : '' }} aui-class a-class">
+  <view class="aui-spin__body">
+    <view class="aui-spin__loading"></view>
+    <view class="aui-spin__content">
+      <slot></slot>
+    </view>
+  </view>
+</view>
