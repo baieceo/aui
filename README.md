@@ -18,7 +18,21 @@
 # 组件列表
 
 ## 目录
-[头像组件](#Avatar头像组件)
+[Avatar头像组件](#Avatar头像组件)
+[Button按钮组件](#Button按钮组件)
+[Calendar日历组件](#Calendar日历组件)
+[Row行组件](#Row行组件)
+[Col列组件](#Col列组件)
+[Comment评论组件](#Comment评论组件)
+[CountDown倒计时组件](#CountDown倒计时组件)
+[Divider分割线组件](#Divider分割线组件)
+[Drawer抽屉组件](#Drawer抽屉组件)
+[Result结果组件](#Result结果组件)
+[Rate评分组件](#Rate评分组件)
+[Spin加载中组件](#Spin加载中组件)
+[WhiteSpace上下补白组件](#WhiteSpace上下补白组件)
+[WingBlank两侧补白组件](#WingBlank两侧补白组件)
+[Panel面板组件](#Panel面板组件)
 
 ### Avatar头像组件
 在 .json 中引入组件
@@ -40,7 +54,7 @@ borderColor|边框颜色|String|#FF7740
 borderWidth|边框大小|Number|2
 background|背景颜色|String|#F8F8F8
 
-2. Button 按钮组件
+### Button按钮组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -81,7 +95,7 @@ Button events
 |bind:getphonenumber|获取用户手机号回调|-|
 bind:error	当使用开放能力时，发生错误的回调|-|
 
-3. Calendar 日历组件
+### Calendar日历组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -118,7 +132,7 @@ Calendar events
 
 
 
-4. Row 行组件
+### Row行组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -136,7 +150,9 @@ Calendar events
     </aui-col>
 </aui-row>
 ```
+
 Row properties
+
 |属性|说明|类型|默认值|
 |-|-|-|-|
 |aui-class|自定义 class 类名|String|-|
@@ -148,7 +164,7 @@ Row properties
 
 
 
-5. Col 列组件
+### Col列组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -178,7 +194,7 @@ Col properties
 
 
 
-6. Comment 评论组件
+### Comment评论组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -204,7 +220,7 @@ Comment properties
 
 
 
-7. CountDown 倒计时组件
+### CountDown倒计时组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -238,7 +254,7 @@ CountDown events
 
 
 
-8. Divider 分割线组件
+### Divider分割线组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -261,7 +277,7 @@ Divider properties
 
 
 
-9. Drawer 抽屉组件
+### Drawer抽屉组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -306,7 +322,7 @@ Drawer events
 
 
 
-10. Result 结果组件
+### Result结果组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -339,7 +355,7 @@ Result slot
 
 
 
-11. Rate 评分组件
+### Rate评分组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -378,7 +394,7 @@ Rate events
 
 
 
-12. Spin 加载中组件
+### Spin加载中组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -397,7 +413,7 @@ Spin properties
 
 
 
-13. WhiteSpace 上下补白组件
+### WhiteSpace上下补白组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -418,7 +434,7 @@ WhiteSpace properties
 
 
 
-14. WingBlank 两侧补白组件
+### WingBlank两侧补白组件
 在 .json 中引入组件
 ```
 "usingComponents": {
@@ -440,7 +456,7 @@ WhiteSpace properties
 
 
 
-15. Panel 面板组件
+### Panel面板组件
 在 .json 中引入组件
 ```
 "usingComponents": {
